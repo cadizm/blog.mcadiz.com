@@ -1,0 +1,66 @@
+---
+title: blog.0xfa.de
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ site.name }}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/blog.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+
+
+    <div class="container">
+
+      <div class="blog-header">
+        <p class="lead blog-description"><a href="/">/dev/random</a></p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-7 blog-main">
+
+          {% for post in site.posts %}
+            <div class="blog-post">
+              <h2 class="blog-post-title">{{ post.title }}</h2>
+              <p class="blog-post-meta">{{ post.date | date: "%c" }}</p>
+              <div class="post">
+                {{ post.content }}
+              </div>
+            </div><!-- /.blog-post -->
+          {% endfor %}
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-4 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module">
+            <h4>/etc</h4>
+            <ol class="list-unstyled">
+            {% for post in site.posts %}
+                <li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title | truncate: 22 }}</a></li>
+            {% endfor %}
+            </ol>
+          </div>
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <div class="blog-footer">
+      <p>
+        <a href="#">cadizm(at)0xfa.de</a>
+      </p>
+    </div>
+
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+</html>

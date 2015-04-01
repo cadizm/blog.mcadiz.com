@@ -1,0 +1,39 @@
+
+.blog-header {
+  padding-top: 25px;
+}
+.blog-title {
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+.blog-post {
+  margin-bottom: 80px;
+}
+.blog-post-title {
+  margin-top: 5px;
+}
+.blog-post-meta {
+  margin-bottom: 15px;
+  color: #999;
+}
+
+.blog-footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+.list-unstyled li {
+    font-family: courier;
+}
