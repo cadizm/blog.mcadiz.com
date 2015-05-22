@@ -12,7 +12,7 @@ a brute force solution.
 
 ```python
 """
-Sovlve the `nam puzzle' using brute force.
+Solve the `nam puzzle' using brute force.
 
 See http://goo.gl/8b0ri6 for full problem description.
 """
