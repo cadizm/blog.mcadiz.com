@@ -22,7 +22,8 @@ def main():
     from itertools import permutations
     for p in permutations(range(1, 10)):
         a, b, c, d, e, f, g, h, i = p
-        if a + ((13 * b) / c) + d + (12 * e) - f - 11 + ((g * h) / i) - 10 == 66:
+        if a + ((13 * b) / c) + d + (12 * e) \
+                - f - 11 + ((g * h) / i) - 10 == 66:
             print ':) => {}'.format(p)
             break
     else:
