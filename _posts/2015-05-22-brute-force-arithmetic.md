@@ -4,7 +4,7 @@ title: "brute force arithmetic"
 date: Fri May 22 12:28:08 PDT 2015
 ---
 
-Came across [http://www.theguardian.com/science/alexs-adventures-in-numberland/2015/may/20/can-you-do-the-maths-puzzle-for-vietnamese-eight-year-olds-that-has-stumped-parents-and-teachers](this puzzle)
+Came across [this puzzle](http://www.theguardian.com/science/alexs-adventures-in-numberland/2015/may/20/can-you-do-the-maths-puzzle-for-vietnamese-eight-year-olds-that-has-stumped-parents-and-teachers)
 puzzle today. Instead of trying to do some fancy multivariate analysis, here's
 a brute force solution.
 
@@ -12,7 +12,7 @@ a brute force solution.
 
 ```python
 """
-Sovlve the `name puzzle' using brute force.
+Sovlve the `nam puzzle' using brute force.
 
 See http://goo.gl/8b0ri6 for full problem description.
 """
