@@ -36,7 +36,7 @@ realtime or near-realtime performance. In such cases it probably makes sense to
 optimize and/or rewrite critical pieces in a more close-to-the metal language like
 assembly, C, or C++.
 
-But of obviously correctness trumps all and gathering data/metrics via profiling and
+But obviously correctness trumps all and gathering data/metrics via profiling and
 instrumentation should be done first to see which parts may benefit most from an
 optimized rewrite.
 
