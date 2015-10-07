@@ -2,7 +2,7 @@
 all: build
 
 serve:
-	jekyll serve --watch
+	bundle exec jekyll serve --watch
 
 build:
-	jekyll build
+	bundle exec jekyll build
