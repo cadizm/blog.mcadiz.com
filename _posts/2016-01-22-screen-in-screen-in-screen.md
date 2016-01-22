@@ -21,17 +21,17 @@ some quick googling, I found [this](http://stackoverflow.com/questions/12153996/
 
 Since the inner screen was started on a remote machine that didn't have my
 [.screenrc](https://github.com/cadizm/dotfiles/blob/master/screenrc#L5), the
-global escape option was still the default `Ctrl-a`, and I didn't need to go
-through the usual hoops when detaching from an inner screen.
+global escape option was still the default `ctrl-a`, and I didn't need to go
+through the usual hoops when detaching from the inner screen.
 
 Reference for myself:
 
 ```
-local-machine$ screen-start  # start screen session
-local-machine$ screen -x  # attach to screen
-local-machine$ ssh remote-machine  # in orig screen
-remote-machine$ screen -dmS 'foo.sh' foo.sh  # start/attach new daemonized screen
-remote-machine$ ^ad  # detach from inner screen
-remote-machine$ ^d  # logout from remote machine
-local-machine$  # back to local machine in orig screen
+local$ screen-start  # start screen session
+local$ screen -x  # attach to screen
+local$ ssh remote  # in orig screen
+remote$ screen -dmS 'foo.sh' foo.sh  # start/attach new daemonized screen
+remote$ ^ad  # detach from inner screen
+remote$ ^d  # logout from remote machine
+local$  # back to local machine in orig screen
 ```
