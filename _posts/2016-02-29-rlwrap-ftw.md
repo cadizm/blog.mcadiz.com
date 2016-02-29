@@ -5,7 +5,7 @@ date: Mon Feb 29 12:37:11 PST 2016
 ---
 
 [rlwrap](http://utopia.knoware.nl/~hlub/uck/rlwrap/README.txt) is super nifty.
-I recently found a need for it when playing around with the [ocaml](https://ocaml.org/)
+I recently found a need for it when playing around in the [ocaml](https://ocaml.org/)
 repl:
 
 ```
