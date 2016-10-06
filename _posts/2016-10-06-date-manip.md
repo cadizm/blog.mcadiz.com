@@ -6,7 +6,7 @@ date: Thu Oct  6 14:17:08 PDT 2016
 
 A couple of commands that might be useful for date manipulation:
 
-**Change modification date to today at 6 am**
+**Change filename's modification date to today at 6 am**
 
 ```bash
 $ touch -d "`date "+%D"` 06:00:00" filename
