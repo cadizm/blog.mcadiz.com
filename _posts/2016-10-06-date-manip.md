@@ -14,7 +14,7 @@ $ touch -d "`date "+%D"` 06:00:00" filename
 
 If you install [faketime](https://github.com/wolfcw/libfaketime),
 
-**Run script as if now was 10 am**
+**Run script as if it were 10 am now**
 
 ```bash
 $ faketime "`date "+%D"` 10:00:00" script
