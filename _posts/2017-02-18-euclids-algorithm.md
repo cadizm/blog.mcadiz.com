@@ -8,6 +8,8 @@ Since I always forget
 
 
 ```go
+// euclid.go
+
 func gcd(a, b int) int {
 	if b == 0 {
 		return a
