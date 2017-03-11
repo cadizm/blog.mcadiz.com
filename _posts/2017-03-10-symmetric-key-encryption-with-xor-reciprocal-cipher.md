@@ -4,9 +4,9 @@ title: "Symmetric Key Encryption with XOR Reciprocal Cipher"
 date: Fri Mar 10 17:08:01 PST 2017
 ---
 
-For very basic (and weak) encryption using a shared secret, one might want
-to consider using an [XOR Cipher](https://en.wikipedia.org/wiki/XOR_cipher)
-for non-sensitive data for to ease of implementation.
+For very basic (and weak) encryption (of non-sensitive data) using a shared
+secret, one might want to consider using an [XOR Cipher](https://en.wikipedia.org/wiki/XOR_cipher)
+due to ease of implementation.
 
 Here's 3 implementations I needed for distribution to different code bases:
 
