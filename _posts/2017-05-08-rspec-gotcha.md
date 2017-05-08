@@ -17,8 +17,8 @@ end
 ```
 
 After coming back to it the next day with a clearer head (and more patient
-googling), I realized that the expectation that message will be received in
-the _future_. Doh!
+googling), I realized that the expectation is that message will be received
+in the _future_. Doh!
 
 So this should be:
 
