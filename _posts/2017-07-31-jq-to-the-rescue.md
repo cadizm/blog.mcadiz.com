@@ -31,3 +31,9 @@ function poll_jenkins {
     done
 }
 ```
+
+Retrieving the `offer_id` from a list of `offers`:
+
+```bash
+$ cat offers-2017-07-31.json | jq '[.offers[].offer_id]' | less
+```
