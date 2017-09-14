@@ -18,7 +18,7 @@ When in doubt, use brute force:
 ```python
 from itertools import permutations
 
-corpus = list('DEMNORSY')
+corpus = list(set('SENDMOREMONEY'))
 
 def f(D):
     def g(word):
