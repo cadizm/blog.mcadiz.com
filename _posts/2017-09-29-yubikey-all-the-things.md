@@ -139,3 +139,23 @@ l0st:~$ pkill ssh-agent && pkill gpg-agent && eval $(gpg-agent --daemon --enable
 l0st:~$ ssh-add -L
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5xxrkhC2MnXO2HJzJL7kFPhE71pejZMNZ8SwYDMlQoRCnuvNZ9eDy+ped+nCO+SEyNcMlike6clG6/iepfXNteqpaM4mmH9UyKmbdVLr3Vks1dMUI9TL9DHzIe7KvogmHdV+Fg30m13pKbknFES7HGBjAV6U8EXteT4v17dSZ/P2B3l4EdmTAtgWfsQnSEecd5SKVWpdOovL/h67W4zrgTKcQZB5h3sW7TyPSSgEF30Bdt8gv8/nZJtv2husSZaIRzm7V4Y3ikP1Lh3QdSQenTAjcWRRh/X+9ueXyc5zqGQu/i+PPriZIdIqN2T+ql5FXTdni5W4Se0Fhm7SvHVwd cardno:000606471444
 ```
+
+In the event your YubiKey (and backup YubiKey) are lost, to re-import
+
+```bash
+$ cd $(mktemp -d)
+$ chmod 700 .
+$ export GNUPGHOME=`pwd`
+$ export GPG_TTY=$(tty)
+$ wget https://cadizm.com/files/cadizm-pgp-public.key.txt
+$ wget https://raw.githubusercontent.com/cadizm/dotfiles/master/gnupg/gpg.conf
+$ wget https://raw.githubusercontent.com/cadizm/dotfiles/master/gnupg/gpg-agent.conf
+$ pkill gpg-agent
+$ gpg --list-keys
+$ gpg --import < cadizm-pgp-public.key.txt
+# save master and sub-keys to master-sub.key
+$ gpg --import < master-sub.key
+$ gpg --list-keys
+```
+
+You should then revoke and regenerate your keys.
