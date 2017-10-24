@@ -35,3 +35,9 @@ remote$ ^ad  # detach from inner screen
 remote$ ^d  # logout from remote machine
 local$  # back to local machine in orig screen
 ```
+
+Can also do:
+
+```
+$ screen -d -D
+```
