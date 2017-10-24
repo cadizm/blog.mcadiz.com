@@ -4,7 +4,8 @@ title: "Combinatorics refresher"
 date: Sat Oct 21 16:22:01 PDT 2017
 ---
 
-[Power set](https://en.wikipedia.org/wiki/Power_set) and [combinations](https://en.wikipedia.org/wiki/Combination)
+[Power set](https://en.wikipedia.org/wiki/Power_set), [permutations](https://en.wikipedia.org/wiki/Permutation),
+and [combinations](https://en.wikipedia.org/wiki/Combination)
 
 
 ```python
@@ -20,6 +21,25 @@ def powerset(S):
             if (1 << j) & i:
                 T.append(S[j])
         res.append(T)
+
+    return res
+
+
+def permutations(L):
+    """
+    Return all n! (n-factorial) permutations of elements in L
+    """
+    if len(L) <= 0:
+        return []
+    elif len(L) == 1:
+        return L
+
+    res = []
+    for i, v in enumerate(L):
+        prefix = L[:i]
+        suffix = L[i+1:]
+        for perm in permutations(prefix + suffix):
+            res.append(v + perm)
 
     return res
 
