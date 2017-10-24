@@ -5,7 +5,10 @@ date: Sat Oct 21 16:22:01 PDT 2017
 ---
 
 [Power set](https://en.wikipedia.org/wiki/Power_set), [permutations](https://en.wikipedia.org/wiki/Permutation),
-and [combinations](https://en.wikipedia.org/wiki/Combination)
+and [combinations](https://en.wikipedia.org/wiki/Combination).
+
+Note that for `permutations`, can augment to get the k-length permutations by
+return slices of length k (`[v + perm][:k]`).
 
 
 ```python
