@@ -5,7 +5,8 @@ date: Fri May  4 11:30:56 PDT 2018
 ---
 
 Goal: [attach](https://docs.docker.com/engine/reference/commandline/attach/) to
-a running Docker container and then detach without killing it.
+a running Docker [container](https://docs.docker.com/engine/reference/commandline/container/)
+and then detach without killing it.
 
 Two possbile solutions:
 
