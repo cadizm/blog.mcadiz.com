@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "`_init_completion: command not found`"
+title: "_init_completion: command not found"
 date: Thu Jul 15 14:57:21 PDT 2021
 ---
 
