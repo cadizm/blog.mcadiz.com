@@ -23,7 +23,7 @@ $$\frac{1}{1 + 10^\frac{0}{400}} = \frac{1}{1 + 1} = \frac{1}{2} = 0.50$$
 
 After a given outcome has occurred, the formula below is used to update each Player's rating:
 
-$$R_a' = R_a + K(S_a - E_a)$$
+$$R' = R + K(S - E)$$
 
 This formula updates a player's rating given current rating $$R$$, expected probability of winning $$E$$, and outcome $$S$$.
 
