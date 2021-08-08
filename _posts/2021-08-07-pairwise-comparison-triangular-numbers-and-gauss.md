@@ -46,8 +46,8 @@ it's easy to skim the code, see 2 `for` loops, declare it quadratic, and call it
 we want a more rigorous proof, we can dissect its components.
 
 The outer loop clearly runs in linear time ($$O(n)$$). But what about the inner loops? Each
-begins at the $$ith$$ and ends at the last, so it's upper bound must be $$n$$. But does that
-mean the overall pairwise comparison is sub-quadratic?
+begins at the $$ith$$ element and ends at the last, so it's upper bound must be $$n$$. But does
+that mean the overall pairwise comparison is sub-quadratic?
 
 Again, it becomes easier to see when we start unrolling the loop iterations:
 
@@ -70,9 +70,9 @@ $$
 The solution to this sequence is most famously attributed to [Gauss](https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss#Anecdotes) when in grade school. And in this notation it's much easier to see that the upper bound is indeed $$O(n^2)$$.
 
 A visual interpretation can be done using [triangular numbers](https://en.wikipedia.org/wiki/Triangular_number), where the triangle can be pictured as a "half-square" of objects added together with
-a copy of itself and rotated to form a triangle with dimensions $$n(n + 1)$$.
+a copy of itself and rotated to form a rectangle with dimensions $$n(n + 1)$$.
 
-Lastly, thinking of this [combinatorically](https://en.wikipedia.org/wiki/Combinatorics), the equation
+Lastly, thinking of this [combinatorically](https://en.wikipedia.org/wiki/Combinatorics), the formula
 can be written as a [binomial coefficient](https://en.wikipedia.org/wiki/Binomial_coefficient):
 
 $$
