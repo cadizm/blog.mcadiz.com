@@ -8,7 +8,7 @@ Came across [this puzzle](http://www.theguardian.com/science/alexs-adventures-in
 today. Instead of trying to do some fancy multivariate analysis, here's
 a brute force solution.
 
-<img src="/images/nam_puzzle.png">
+<img src="/images/nam_puzzle.png" class="img-responsive">
 
 ```python
 """

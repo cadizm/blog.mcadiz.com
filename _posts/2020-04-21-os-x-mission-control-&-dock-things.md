@@ -6,7 +6,7 @@ date: Tue Apr 21 10:21:19 PDT 2020
 
 Two things that will drive one bonkers when switching to a new laptop (when you don't recall that they are actual settings)
 
-<img src="/images/mission-control.png">
+<img src="/images/mission-control.png" class="img-responsive">
 
 Dock keyboard shortcut bonus:
 
