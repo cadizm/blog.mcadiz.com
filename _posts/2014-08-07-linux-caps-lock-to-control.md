@@ -6,7 +6,7 @@ date: Thu Aug  7 14:00:50 PDT 2014
 
 Download: [http://goo.gl/pxhZdS](http://goo.gl/pxhZdS)
 
-{% highlight bash %}
+```shell
 #!/bin/bash
 
 if [[ $EUID -ne 0 ]]; then
@@ -27,4 +27,4 @@ fi
 dumpkeys | head -1 > /tmp/foo_keys
 echo "keycode 58 = Control" >> /tmp/foo_keys
 loadkeys /tmp/foo_keys
-{% endhighlight %}
+```

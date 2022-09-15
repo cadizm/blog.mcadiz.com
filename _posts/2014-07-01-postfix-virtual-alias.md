@@ -8,14 +8,14 @@ From [Postfix README](http://www.postfix.org/VIRTUAL_README.html#virtual_alias)
 
 Execute the command:
 
-{% highlight bash %}
+```shell
 $ postmap /etc/postfix/virtual
-{% endhighlight %}
+```
 
 after changing the virtual file, and execute the command:
 
-{% highlight bash %}
+```shell
 $ postfix reload
-{% endhighlight %}
+```
 
 after changing the main.cf file.
