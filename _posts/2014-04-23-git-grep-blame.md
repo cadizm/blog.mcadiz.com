@@ -8,7 +8,7 @@ sometimes we want grep and blame
 
 add to `git-blame` on your PATH
 
-{% highlight python %}
+```python
 #!/usr/bin/env python
 
 import sys
@@ -20,12 +20,12 @@ if __name__ == '__main__':
     for (file_line, text) in zip(*[iter(args)] * 2):
         f, n = file_line.strip(':').split(':')
         call(['git', 'blame', '-L', '{0},{1}'.format(n, n), '--', f])
-{% endhighlight %}
+```
 
 then
 
-{% highlight bash %}
+```shell
 $ git grep -i 'error loading order details' | xargs git-blame
 76d02b9z (Foo User 2014-03-14 21:05:53 1957)    $self->alert("Error loading order details");
 76d02b9z (Foo User 2014-03-14 21:05:53 2053)    $self->alert("Error loading order details");
-{% endhighlight %}
+```
