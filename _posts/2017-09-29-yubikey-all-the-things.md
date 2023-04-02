@@ -7,7 +7,7 @@ date: Fri Sep 29 20:21:59 PDT 2017
 Mostly notes to self, extracted from the very thorough guide [here](https://github.com/drduh/YubiKey-Guide/blob/master/README.md).
 
 ```bash
-l0st:~$ gpg --recv 0x210583A0ECB0AFA4
+l0st:~$ gpg --keyserver keyserver.ubuntu.com --recv 0x210583A0ECB0AFA4
 gpg: key 0x210583A0ECB0AFA4: public key "Michael Cadiz <mike@cadizm.com>" imported
 gpg: Total number processed: 1
 gpg:               imported: 1
