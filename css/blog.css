@@ -37,3 +37,20 @@
 .list-unstyled li {
     font-family: courier;
 }
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+  a {
+    color: hotpink;
+  }
+  code {
+    color: cyan;
+    background-color: black;
+  }
+}
