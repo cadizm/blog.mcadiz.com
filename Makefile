@@ -6,3 +6,6 @@ serve:
 
 build:
 	bundle exec jekyll build
+
+clean:
+	/bin/rm -rf _site
