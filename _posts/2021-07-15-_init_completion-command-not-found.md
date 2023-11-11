@@ -6,7 +6,7 @@ date: Thu Jul 15 14:57:21 PDT 2021
 
 #### Update Sat Nov 11 12:42:24 PST 2023
 
-The easiest way to fix this as of Nov 2023 is to just install the `bash-completion@2` Homebrew package.
+As of Nov 2023, the easiest way to fix this  is to just install the `bash-completion@2` Homebrew package.
 
 ---
 
