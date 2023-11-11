@@ -4,6 +4,12 @@ title: "_init_completion: command not found"
 date: Thu Jul 15 14:57:21 PDT 2021
 ---
 
+## Update Sat Nov 11 12:42:24 PST 2023
+
+The easiest way to fix this as of Nov 2023 is to just install the `bash-completion@2` Homebrew package.
+
+---
+
 If you encounter the [bash](https://www.gnu.org/software/bash/) error message: `_init_completion: command not found` when trying to use bash-completion (and you are on macOS), the error is most likely due to having an older version of bash installed such as 3.2 (which is the default on macOS).
 
 The easiest way to solve this is of course to upgrade using [brew](https://formulae.brew.sh/formula/bash).  At the time of this writing this will install 5.1.8(1)-release, but all we really need is v4.1+ in order to make use of bash-completion v2 which includes `_init_completion`.
